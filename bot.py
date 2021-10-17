@@ -9,8 +9,6 @@ import asyncio
 
 load_dotenv()
 # setup
-TOKEN = os.getenv('DISCORD_TOKEN')
-GUILD = os.getenv('DISCORD_GUILD')
 url = 'https://discord.com/api/webhooks/{}'.format(os.getenv('WEBHOOK'))
 calendar_url = 'https://www.eve-calendars.com/calendars/{}'.format(os.getenv('CALENDAR_FEED'))
 client = Client()
@@ -98,4 +96,4 @@ async def check_events():
 if __name__ == '__main__':
     client.loop.create_task(check_events())
     client.loop.run_forever()
-    client.run(TOKEN)
+    client.run()
