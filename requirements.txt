@@ -1,0 +1,7 @@
+icalendar
+discord.py
+python-dotenv
+requests
+logging-python
+datetime
+asyncio
